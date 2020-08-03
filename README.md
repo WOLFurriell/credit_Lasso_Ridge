@@ -7,6 +7,23 @@ Assim, um recurso bastante utilizado são os modelos de crédito quantitativos e
 
 # Regressão Logística comum
 
+
+
+	Sem perdas de generalidade podemos expressar um modelo de regressão da seguinte forma:
+	\begin{equation}
+	\begin{split}
+	Y \mid\mathbf{X} & \sim f(\bm{\theta}) \\
+	Q(Y \mid \mathbf{X}) & = g(\mathbf{X} \mid  \bm{\beta})
+	\end{split}
+	\end{equation}	
+em que 
+	\item $ f(\bm{\theta}) $ é a f.d.p. de alguma distribuição indexada por um parâmetro $ \bm{\theta} $;
+	\item $ Q(Y \mid \mathbf{X}) $ é alguma quantidade de interesse (média, quantil, parâmetro) de $ Y $ condiciada as covariáveis; e
+	\item $ g(\mathbf{X} \mid  \bm{\beta}) $ é uma função de ligação utilizada para associar as covariáveis com a quantidade de interesse.
+
+
+
+
 Os parâmetros estimados são obtidos a partir da função de Máxima Verossimilhança, dada por:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=l(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[y_i&space;log(\pi_i)&plus;(1-y_i)log(1-\pi_i))\right&space;]=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[y_i&space;log(\pi_i)&plus;(1-y_i)log(1-\pi_i))\right&space;]=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]" title="l(\beta) = \sum^{n}_{i=1}\left [y_i log(\pi_i)+(1-y_i)log(1-\pi_i))\right ]= \sum^{n}_{i=1}\left [ y_ix_i\beta-log(1+e^{x_i\beta})) \right ]" /></a>
