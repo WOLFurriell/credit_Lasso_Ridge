@@ -10,8 +10,7 @@ Assim, um recurso bastante utilizado são os modelos de crédito quantitativos e
 
 
 Sem perdas de generalidade podemos expressar um modelo de regressão da seguinte forma:
-Y \mid\mathbf{X} & \sim f(\bm{\theta}) \\
-Q(Y \mid \mathbf{X}) & = g(\mathbf{X} \mid  \bm{\beta})
+<a href="https://www.codecogs.com/eqnedit.php?latex=Y&space;\mid\mathbf{X}&space;&&space;\sim&space;f(\bm{\theta})&space;\\&space;Q(Y&space;\mid&space;\mathbf{X})&space;&&space;=&space;g(\mathbf{X}&space;\mid&space;\bm{\beta})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Y&space;\mid\mathbf{X}&space;&&space;\sim&space;f(\bm{\theta})&space;\\&space;Q(Y&space;\mid&space;\mathbf{X})&space;&&space;=&space;g(\mathbf{X}&space;\mid&space;\bm{\beta})" title="Y \mid\mathbf{X} & \sim f(\bm{\theta}) \\ Q(Y \mid \mathbf{X}) & = g(\mathbf{X} \mid \bm{\beta})" /></a>
 em que 
 f(\bm{\theta}) $ é a f.d.p. de alguma distribuição indexada por um parâmetro  \bm{\theta} $;
 Q(Y \mid \mathbf{X})  é alguma quantidade de interesse (média, quantil, parâmetro) de $ Y $ condiciada as covariáveis; e
