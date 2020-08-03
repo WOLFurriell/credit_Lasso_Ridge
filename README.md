@@ -9,17 +9,13 @@ Assim, um recurso bastante utilizado são os modelos de crédito quantitativos e
 
 
 
-	Sem perdas de generalidade podemos expressar um modelo de regressão da seguinte forma:
-	\begin{equation}
-	\begin{split}
-	Y \mid\mathbf{X} & \sim f(\bm{\theta}) \\
-	Q(Y \mid \mathbf{X}) & = g(\mathbf{X} \mid  \bm{\beta})
-	\end{split}
-	\end{equation}	
+Sem perdas de generalidade podemos expressar um modelo de regressão da seguinte forma:
+Y \mid\mathbf{X} & \sim f(\bm{\theta}) \\
+Q(Y \mid \mathbf{X}) & = g(\mathbf{X} \mid  \bm{\beta})
 em que 
-	\item $ f(\bm{\theta}) $ é a f.d.p. de alguma distribuição indexada por um parâmetro $ \bm{\theta} $;
-	\item $ Q(Y \mid \mathbf{X}) $ é alguma quantidade de interesse (média, quantil, parâmetro) de $ Y $ condiciada as covariáveis; e
-	\item $ g(\mathbf{X} \mid  \bm{\beta}) $ é uma função de ligação utilizada para associar as covariáveis com a quantidade de interesse.
+f(\bm{\theta}) $ é a f.d.p. de alguma distribuição indexada por um parâmetro  \bm{\theta} $;
+Q(Y \mid \mathbf{X})  é alguma quantidade de interesse (média, quantil, parâmetro) de $ Y $ condiciada as covariáveis; e
+g(\mathbf{X} \mid  \bm{\beta}) $ é uma função de ligação utilizada para associar as covariáveis com a quantidade de interesse.
 
 
 
