@@ -7,15 +7,15 @@ Assim, um recurso bastante utilizado são os modelos de crédito quantitativos e
 
 # Regressão Logística comum
 
+Seja a variável resposta $Y$ binária tal que
+Y_i = 1 a ocorrência do evento de interesse (Evento);
+Y_i = 0 ausência do evento de interesse (Referência).
+\mathbf{X}=(X_1,\ldots, X_k)^\top$ é um vetor de variáveis exploratórias, que podem ser discretas, continuas ou categóricas;
+As variáveis categóricas são incorporadas ao modelo por meio de matrizes de variáveis \emph{dummy.}
 
 
-Sem perdas de generalidade podemos expressar um modelo de regressão da seguinte forma:
-<a href="https://www.codecogs.com/eqnedit.php?latex=Y|X&space;~&space;f(\theta)&space;\\&space;Q(Y|X)&space;=&space;g(X|\beta)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?Y|X&space;~&space;f(\theta)&space;\\&space;Q(Y|X)&space;=&space;g(X|\beta)" title="Y|X ~ f(\theta) \\ Q(Y|X) = g(X|\beta)" /></a>
 
-em que 
-<a href="https://www.codecogs.com/eqnedit.php?latex=f(\theta)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?f(\theta)" title="f(\theta)" /></a> é a f.d.p. de alguma distribuição indexada por um parâmetro  \bm{\theta} $;
-Q(Y \mid \mathbf{X})  é alguma quantidade de interesse (média, quantil, parâmetro) de $ Y $ condiciada as covariáveis; e
-g(\mathbf{X} \mid  \bm{\beta}) $ é uma função de ligação utilizada para associar as covariáveis com a quantidade de interesse.
+
 
 
 
