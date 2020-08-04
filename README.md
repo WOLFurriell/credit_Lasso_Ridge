@@ -22,13 +22,13 @@ em que <img src="https://latex.codecogs.com/gif.latex?\pi_i" title="\pi_i" /> de
 
 As suposições acerca do modelos sugerem que:
 
-<img src="https://latex.codecogs.com/gif.latex?y_1,&space;y_2,&space;...,&space;y_n" title="y_1, y_2, ..., y_n" /> são i.i.d. 
+- <img src="https://latex.codecogs.com/gif.latex?y_1,&space;y_2,&space;...,&space;y_n" title="y_1, y_2, ..., y_n" /> são i.i.d. 
 
-<img src="https://latex.codecogs.com/gif.latex?Y_i&space;\sim&space;\mathcal{B}(\pi_i)" title="Y_i \sim \mathcal{B}(\pi_i)" /> isto é, assume a distribuição bernoulli da resposta.
+- <img src="https://latex.codecogs.com/gif.latex?Y_i&space;\sim&space;\mathcal{B}(\pi_i)" title="Y_i \sim \mathcal{B}(\pi_i)" /> isto é, assume a distribuição bernoulli da resposta.
 
-Não existe uma relação linear entre <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> e <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{X}" title="\boldsymbol{X}" />, mas sim, entre a função de ligação e o preditor linear.
+- Não existe uma relação linear entre <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> e <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{X}" title="\boldsymbol{X}" />, mas sim, entre a função de ligação e o preditor linear.
 
-As medidas de qualidade do modelo dependem de amostras suficientemente grandes, evitando assim, subpopulações muito pequenas.
+- As medidas de qualidade do modelo dependem de amostras suficientemente grandes, evitando assim, subpopulações muito pequenas.
 	
 Os parâmetros estimados são obtidos a partir da função de Máxima Verossimilhança, dada por:
 
