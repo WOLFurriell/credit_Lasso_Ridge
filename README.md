@@ -29,7 +29,7 @@ Outro ponto de atenção refere-se a seleção das variáveis preditoras, na gra
 
 # Regularização
 
-Para contornar as limitacões elencados nos modelos de regressão logística comum algumas os modelos com regularização, podem ser empregados. Tais metodologias regulam a entrada das variáveis no modelo, através de pesos, impondo uma penalidade na função objetivo. Vamos discutir acerca do Ridge, Lasso e Elastic Net.
+Para contornar as limitacões elencados nos modelos de regressão logística comum algumas os modelos com regularização, podem ser empregados, vamos discutir acerca do Ridge, Lasso e Elastic Net. A solução destes algoritmos é adicionar hiperparâmetros regularizadores penalizando os parâmetros da regressão, auxiliando na diminuição da variância e do erro do modelo, garantindo a generalização efetivo do modelo e com isso, regulam a entrada das covariáveis, através de pesos, impondo uma penalidade na função objetivo.
 
 # Ridge
 
