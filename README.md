@@ -7,6 +7,8 @@ Assim, um recurso bastante utilizado são os modelos de crédito quantitativos e
 
 # Regressão Logística comum
 
+O modelo de regressão logística tem a mrs modelo de regressão linear. No entanto, no modelo logístico a variável resposta $ Y_i $ é binária. Uma variável binária assume dois valores, como por exemplo, $ Y_i=0 $ e $ Y_i=1, $ denominados "fracasso" e "sucesso", respectivamente. Neste caso, "sucesso" é o evento de interesse.
+
 Seja a variável resposta Y binária tal que
 <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 1 a ocorrência do evento de interesse (Evento);
 <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 0 ausência do evento de interesse (Referência).
