@@ -31,11 +31,9 @@ A tarefa de determinar quais preditores estão associados a variável target nã
 
 # Regularização
 
-Existem algumas abordagens para executar automaticamente a seleção de variáveis.
-De modo geral, quando a relação entre a função de ligação e uma resposta dicotômica com os preditores é aproximadamente linear, as estimativas de probabilidade terão um viés baixo, contudo podem ter uma alta variação, quando o número de covariáveis for elevado comparado as observações ou quando existe multicolinearidade. Dessa forma, as regressões regularizadas podem ser empregadas trocando um pequeno aumento no viés por uma considerável diminuição na variação dos resultados e consequentemente melhorando a precisão geral.
+De modo geral, quando a relação entre a função de ligação e uma resposta dicotômica com os preditores é aproximadamente linear, as estimativas de probabilidade terão um viés baixo, contudo podem ter uma alta variação, quando o número de covariáveis for elevado comparado as observações ou quando existe multicolinearidade nos dados. Dessa forma, as regressões regularizadas podem ser empregadas trocando um pequeno aumento no viés por uma considerável diminuição na variação e consequentemente melhorando a precisão geral do modelo.
 
-
-Para contornar as limitacões elencados nos modelos de regressão logística comum algumas os modelos com regularização, podem ser empregados, vamos discutir acerca do Ridge, Lasso e Elastic Net. A solução destes algoritmos é adicionar hiperparâmetros regularizadores penalizando os parâmetros da regressão, auxiliando na diminuição da variância e do erro do modelo, garantindo a generalização efetivo do modelo e com isso, regulam a entrada das covariáveis, através de pesos, impondo uma penalidade na função objetivo.
+Com isso para contornar as limitacões elencados vamos discutir acerca do Ridge, Lasso e Elastic Net. A solução destes algoritmos é adicionar hiperparâmetros regularizadores penalizando os parâmetros da regressão, auxiliando assim na diminuição da variância e do erro do modelo, garantindo a generalização efetiva e com isso, regulando a entrada das covariáveis, através de pesos, impondo uma penalidade na função objetivo.
 
 # Ridge
 
