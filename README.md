@@ -41,13 +41,22 @@ O estimador de Ridge depende da escolha do hiperparâmetro de tuning <img src="h
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=l^R_\lambda(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda&space;\sum^{p}_{j=1}\beta^2_j" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l^R_\lambda(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda&space;\sum^{p}_{j=1}\beta^2_j" title="l^R_\lambda(\beta) = \sum^{n}_{i=1}\left [ y_ix_i\beta-log(1+e^{x_i\beta})) \right ] - \lambda \sum^{p}_{j=1}\beta^2_j" /></a>
 
+Para qualquer valor fixo de λ, a regressão de Ridge se encaixa apenas em um único modelo, que pode ser executado rapidamente. À medida que a penalidade de contração λ aumenta, as estimativas do coeficiente tendem a se aproximar de zero. No entanto, a penalidade introduzida na função de probabilidade de log reduzirá todos os coeficientes para zero, mas não definirá nenhum deles exatamente como zero. Portanto, a regressão de Ridge tem a desvantagem sobre a seleção do modelo, de incluir todos os preditores no modelo final. Dessa forma, a interpretação do modelo quando o número de variáveis é grande acaba sendo mais problemática. 
+
 # Lasso
+
+O Lasso é outra alternativa de regularização que supera a desvantagem da incapacidade da regressão de Ridge de reduzir o número de preditores no modelo final. A versão penalizada da função de probabilidade de log a ser maximizada assume agora a forma:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=l^L_\lambda(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda&space;\sum^{p}_{j=1}|\beta_j|" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l^R_\lambda(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda&space;\sum^{p}_{j=1}|\beta_j|" title="l^R_\lambda(\beta) = \sum^{n}_{i=1}\left [ y_ix_i\beta-log(1+e^{x_i\beta})) \right ] - \lambda \sum^{p}_{j=1}|\beta_j|" /></a>
 
-# Elastic Net.
+Comparando com a regressão de Ridge, o Lasso usa uma penalidade de L1 em vez de L2. A penalidade de L1 usada é usada para seleção de variáveis, uma vez que tem o efeito quando λ é suficientemente grande, de forçar algumas das estimativas do coeficiente a serem exatamente iguais a zero. O Lasso tem uma vantagem sobre a regressão da Ridge, já que o modelo final pode envolver apenas um subconjunto dos preditores, o que, por sua vez, melhora a interpretabilidade. Com relação à precisão da previsão, geralmente quando apenas um pequeno número de preditores possui coeficientes substanciais, pode-se esperar um desempenho melhor do Lasso, enquanto quando todos os coeficientes têm aproximadamente o mesmo tamanho, espera-se um melhor desempenho da regressão da Ridge. Tanto para a regressão do Lasso quanto de Ridge, geralmente não se penalizam o intercepto. 
+
+# Elastic Net
+
+Outro método de regularização e seleção variável chamado Elastic Net, inclui um parâmetro de ajuste α ≥ 0, sendo a penalidade uma mistura das duas abordagens anteriore
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha\sum_{j=1}^{p}\beta^2_j&plus;(1-\alpha))\sum_{j=1}^{p}|\beta_j|" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha\sum_{j=1}^{p}\beta^2_j&plus;(1-\alpha))\sum_{j=1}^{p}|\beta_j|" title="\alpha\sum_{j=1}^{p}\beta^2_j+(1-\alpha))\sum_{j=1}^{p}|\beta_j|" /></a>
 
+Essa abordagem é particularmente útil quando o número de preditores é muito maior que o número de observações.
 
-For  both  lasso  and  ridge  regression,  generally  one  do  not  penalize  the  intercept  term,  and  standardize  the  predictors for the penalty to be meaningful (Hastie et al., 2009). Another  regularization  and  variable  selection  method  proposed  by  Zou  and  Hastie  (2005),  called  elastic  net,  includes a tuning parameter α≥ 0, being the penalty a mixture of the previous two approaches: 
+Escolher um bom valor de λ é uma etapa crítica para os algoritmos por isso é importante a realização de tuning dos hiperparâmetros juntamento com a avaliação do ajuste dos modelos.
