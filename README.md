@@ -6,7 +6,7 @@ Assim, um recurso bastante utilizado são os modelos de crédito quantitativos e
 
 # Regressão Logística comum
 
-Vamos relembrar alguns aspectos importantes do modelo de regressào logística binária, seja a variável resposta Y binária tal que:
+Vamos relembrar alguns aspectos importantes do modelo de regressão logística binária. seja a variável resposta Y binária tal que:
 
 - <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 1 a ocorrência do evento de interesse (Evento);
 
@@ -20,16 +20,6 @@ Vamos relembrar alguns aspectos importantes do modelo de regressào logística b
 
 em que <img src="https://latex.codecogs.com/gif.latex?\pi_i" title="\pi_i" /> denota a probabilidade de ocorrência do evento de interesse.
 
-As suposições acerca do modelos sugerem que:
-
-- <img src="https://latex.codecogs.com/gif.latex?y_1,&space;y_2,&space;...,&space;y_n" title="y_1, y_2, ..., y_n" /> são i.i.d. 
-
-- <img src="https://latex.codecogs.com/gif.latex?Y_i&space;\sim&space;\mathcal{B}(\pi_i)" title="Y_i \sim \mathcal{B}(\pi_i)" /> isto é, assume a distribuição bernoulli da resposta.
-
-- Não existe uma relação linear entre <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> e <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{X}" title="\boldsymbol{X}" />, mas sim, entre a função de ligação e o preditor linear.
-
-- As medidas de qualidade do modelo dependem de amostras suficientemente grandes, evitando assim, subpopulações muito pequenas.
-	
 Os parâmetros estimados são obtidos a partir da função de Máxima Verossimilhança, dada por:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=l(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[y_i&space;log(\pi_i)&plus;(1-y_i)log(1-\pi_i))\right&space;]=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[y_i&space;log(\pi_i)&plus;(1-y_i)log(1-\pi_i))\right&space;]=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]" title="l(\beta) = \sum^{n}_{i=1}\left [y_i log(\pi_i)+(1-y_i)log(1-\pi_i))\right ]= \sum^{n}_{i=1}\left [ y_ix_i\beta-log(1+e^{x_i\beta})) \right ]" /></a>
