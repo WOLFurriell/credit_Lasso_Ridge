@@ -7,12 +7,10 @@ Assim, um recurso bastante utilizado são os modelos de crédito quantitativos e
 
 # Regressão Logística comum
 
-O modelo de regressão logística tem a mrs modelo de regressão linear. No entanto, no modelo logístico a variável resposta $ Y_i $ é binária. Uma variável binária assume dois valores, como por exemplo, $ Y_i=0 $ e $ Y_i=1, $ denominados "fracasso" e "sucesso", respectivamente. Neste caso, "sucesso" é o evento de interesse.
-
-Seja a variável resposta Y binária tal que
+Vamos relembrar alguns aspectos importantes do modelo de regressào logística binária, seja a variável resposta Y binária tal que
 <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 1 a ocorrência do evento de interesse (Evento);
 <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 0 ausência do evento de interesse (Referência).
-<img src="https://latex.codecogs.com/gif.latex?f{X}=(X_1,\ldots,&space;X_k)^\top" title="f{X}=(X_1,\ldots, X_k)^\top" /> é um vetor de variáveis exploratórias, que podem ser discretas, continuas ou categóricas As variáveis categóricas são incorporadas ao modelo por meio de matrizes de variáveis dummy.
+<img src="https://latex.codecogs.com/gif.latex?f{X}=(X_1,\ldots,&space;X_k)^\top" title="f{X}=(X_1,\ldots, X_k)^\top" /> é um vetor de variáveis exploratórias, que podem ser discretas, continuas ou categóricas. De tal forma que as variáveis categóricas quando não ordinais podem ser incorporadas ao modelo por meio de matrizes dummy.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\pi_i=Pr(Y_i=1|X_i=x_i)=\frac{\exp(\beta_0&plus;\beta_1&space;x_{i1}&space;&plus;&space;...&space;&plus;&space;\beta_k&space;x_{ik})}{1&plus;\exp(\beta_0&plus;\beta_1&space;x_{i1}&space;&plus;&space;...&space;&plus;&space;\beta_k&space;x_{ik})},&space;\\&space;logit(\pi_i)=\log\left(\frac{\pi_i}{1-\pi_i}\right)=&space;\beta_0&plus;\beta_1&space;x_{i1}&space;&plus;&space;...&space;&plus;&space;\beta_k&space;x_{ik}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\pi_i=Pr(Y_i=1|X_i=x_i)=\frac{\exp(\beta_0&plus;\beta_1&space;x_{i1}&space;&plus;&space;...&space;&plus;&space;\beta_k&space;x_{ik})}{1&plus;\exp(\beta_0&plus;\beta_1&space;x_{i1}&space;&plus;&space;...&space;&plus;&space;\beta_k&space;x_{ik})},&space;\\&space;logit(\pi_i)=\log\left(\frac{\pi_i}{1-\pi_i}\right)=&space;\beta_0&plus;\beta_1&space;x_{i1}&space;&plus;&space;...&space;&plus;&space;\beta_k&space;x_{ik}" title="\pi_i=Pr(Y_i=1|X_i=x_i)=\frac{\exp(\beta_0+\beta_1 x_{i1} + ... + \beta_k x_{ik})}{1+\exp(\beta_0+\beta_1 x_{i1} + ... + \beta_k x_{ik})}, \\ logit(\pi_i)=\log\left(\frac{\pi_i}{1-\pi_i}\right)= \beta_0+\beta_1 x_{i1} + ... + \beta_k x_{ik}" /></a>
 
