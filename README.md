@@ -10,7 +10,7 @@ Vamos relembrar alguns aspectos importantes do modelo de regressào logística b
 
 - <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 1 a ocorrência do evento de interesse (Evento);
 
-- img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 0 ausência do evento de interesse (Referência).
+- <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 0 ausência do evento de interesse (Referência).
 
 - <img src="https://latex.codecogs.com/gif.latex?f{X}=(X_1,\ldots,&space;X_k)^\top" title="f{X}=(X_1,\ldots, X_k)^\top" /> é um vetor de variáveis exploratórias, que podem ser discretas, continuas ou categóricas. De tal forma que as variáveis categóricas quando não ordinais podem ser incorporadas ao modelo por meio de matrizes dummy.
 
