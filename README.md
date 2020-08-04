@@ -7,19 +7,18 @@ Assim, um recurso bastante utilizado são os modelos de crédito quantitativos e
 
 # Regressão Logística comum
 
-Seja a variável resposta $Y$ binária tal que
+Seja a variável resposta Y binária tal que
 <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 1 a ocorrência do evento de interesse (Evento);
 <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 0 ausência do evento de interesse (Referência).
-<img src="https://latex.codecogs.com/gif.latex?f{X}=(X_1,\ldots,&space;X_k)^\top" title="f{X}=(X_1,\ldots, X_k)^\top" /> é um vetor de variáveis exploratórias, que podem ser discretas, continuas ou categóricas;
-As variáveis categóricas são incorporadas ao modelo por meio de matrizes de variáveis dummy.
+<img src="https://latex.codecogs.com/gif.latex?f{X}=(X_1,\ldots,&space;X_k)^\top" title="f{X}=(X_1,\ldots, X_k)^\top" /> é um vetor de variáveis exploratórias, que podem ser discretas, continuas ou categóricas As variáveis categóricas são incorporadas ao modelo por meio de matrizes de variáveis dummy.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\pi_i=Pr(Y_i=1|X_i=x_i)=\frac{\exp(\beta_0&plus;\beta_1&space;x_{i1}&space;&plus;&space;...&space;&plus;&space;\beta_k&space;x_{ik})}{1&plus;\exp(\beta_0&plus;\beta_1&space;x_{i1}&space;&plus;&space;...&space;&plus;&space;\beta_k&space;x_{ik})},&space;\\&space;logit(\pi_i)=\log\left(\frac{\pi_i}{1-\pi_i}\right)=&space;\beta_0&plus;\beta_1&space;x_{i1}&space;&plus;&space;...&space;&plus;&space;\beta_k&space;x_{ik}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\pi_i=Pr(Y_i=1|X_i=x_i)=\frac{\exp(\beta_0&plus;\beta_1&space;x_{i1}&space;&plus;&space;...&space;&plus;&space;\beta_k&space;x_{ik})}{1&plus;\exp(\beta_0&plus;\beta_1&space;x_{i1}&space;&plus;&space;...&space;&plus;&space;\beta_k&space;x_{ik})},&space;\\&space;logit(\pi_i)=\log\left(\frac{\pi_i}{1-\pi_i}\right)=&space;\beta_0&plus;\beta_1&space;x_{i1}&space;&plus;&space;...&space;&plus;&space;\beta_k&space;x_{ik}" title="\pi_i=Pr(Y_i=1|X_i=x_i)=\frac{\exp(\beta_0+\beta_1 x_{i1} + ... + \beta_k x_{ik})}{1+\exp(\beta_0+\beta_1 x_{i1} + ... + \beta_k x_{ik})}, \\ logit(\pi_i)=\log\left(\frac{\pi_i}{1-\pi_i}\right)= \beta_0+\beta_1 x_{i1} + ... + \beta_k x_{ik}" /></a>
 
 em que <img src="https://latex.codecogs.com/gif.latex?\pi_i" title="\pi_i" /> denota a probabilidade de ocorrência do evento de interesse.
 
 Os dados <img src="https://latex.codecogs.com/gif.latex?y_1,&space;y_2,&space;...,&space;y_n" title="y_1, y_2, ..., y_n" /> são i.i.d. 
-$Y_i \sim \mathcal{B}(\pi_i)$ isto é, assume a distribuição bernoulli da resposta.
-Não existe uma relação linear entre $Y_i$ e $\boldsymbol{X}$, mas sim, entre a função de ligação e o preditor linear.
+<img src="https://latex.codecogs.com/gif.latex?Y_i&space;\sim&space;\mathcal{B}(\pi_i)" title="Y_i \sim \mathcal{B}(\pi_i)" /> isto é, assume a distribuição bernoulli da resposta.
+Não existe uma relação linear entre <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> e $\boldsymbol{X}$, mas sim, entre a função de ligação e o preditor linear.
 Não homogeneidade da variância..
 Os erros precisam ser independentes, mas não normalmente distribuídos.
 As medidas de qualidade do modelo dependem de amostras suficientemente grandes, evitando assim, subpopulações muito pequenas.
