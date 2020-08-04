@@ -20,9 +20,16 @@ Vamos relembrar alguns aspectos importantes do modelo de regressão logística b
 
 em que <img src="https://latex.codecogs.com/gif.latex?\pi_i" title="\pi_i" /> denota a probabilidade de ocorrência do evento de interesse.
 
-Os parâmetros estimados são obtidos a partir da função de Máxima Verossimilhança, dada por:
+- Os parâmetros estimados são obtidos a partir da função de Máxima Verossimilhança, dada por:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=l(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[y_i&space;log(\pi_i)&plus;(1-y_i)log(1-\pi_i))\right&space;]=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[y_i&space;log(\pi_i)&plus;(1-y_i)log(1-\pi_i))\right&space;]=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]" title="l(\beta) = \sum^{n}_{i=1}\left [y_i log(\pi_i)+(1-y_i)log(1-\pi_i))\right ]= \sum^{n}_{i=1}\left [ y_ix_i\beta-log(1+e^{x_i\beta})) \right ]" /></a>
+
+Apesar de ser um algoritmo amplamente utilizado, os modelos de regressão logística tem algumas limitações, principalmente quando precisamos considerar um volume bastante grande de covariáveis para sua construção. Tal questão levanta problemas como o de multicolinearidades, isto é, variáveis preditoras com alto nível de correlação no modelo resultando em inferências errôneas ou pouco confiáveis. Ou mesmo, modelos hiperparametrizados e extremamente suscetíveis ao overfitting.
+Outro ponto de atenção refere-se a seleção das variáveis preditoras, na grande maioria dos casos a seleção é dada pelas técnicas de Stepwise, Forward, Backward ou mesmo o Teste da Razão de Verossimilhança algoritmos baseados em testes de distribuições de probabilidade, que para amostras muito grandes tendem a ser significativos em algum grau. 
+
+# Regularização
+
+Para contornar as limitacões elencados nos modelos de regressão logística comum algumas os modelos com regularização, podem ser empregados. Tais metodologias regulam a entrada das variáveis no modelo, através de pesos, impondo uma penalidade na função objetivo. Vamos discutir acerca do Ridge, Lasso e Elastic Net.
 
 # Ridge
 
