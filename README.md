@@ -6,7 +6,7 @@ Assim, um recurso bastante utilizado são os modelos de crédito quantitativos e
 
 # Regressão Logística comum
 
-Vamos relembrar alguns aspectos importantes do modelo de regressão logística binária. seja a variável resposta Y binária tal que:
+Vamos relembrar alguns aspectos importantes do modelo de Regressão Logística, seja a variável resposta Y binária temos:
 
 - <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 1 a ocorrência do evento de interesse (Evento);
 
