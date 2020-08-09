@@ -47,11 +47,11 @@ O estimador de Ridge depende da escolha do hiperparâmetro de tuning <img src="h
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=l^R_\lambda(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda&space;\sum^{p}_{j=1}\beta^2_j" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l^R_\lambda(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda&space;\sum^{p}_{j=1}\beta^2_j" title="l^R_\lambda(\beta) = \sum^{n}_{i=1}\left [ y_ix_i\beta-log(1+e^{x_i\beta})) \right ] - \lambda \sum^{p}_{j=1}\beta^2_j" /></a>
 
-À medida que a penalidade de <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> aumenta, as estimativas tendem a se aproximar de zero. Portanto, a regressão de Ridge tem a desvantagem sobre a seleção das covariáveis, uma vez que, inclui todas no modelo final. Dessa forma, a interpretação do modelo quando o número de variáveis é grande torna-se problemática. 
+À medida que a penalidade de <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> aumenta, as estimativas tendem a se aproximar de zero. Portanto, a regressão de Ridge tem a desvantagem sobre a seleção das covariáveis, uma vez que, inclui todas no modelo final. Logo, a interpretação do modelo quando o número de variáveis é grande torna-se problemática. 
 
 # Lasso
 
-O Lasso é outra alternativa de regularização que supera a desvantagem da incapacidade da regressão de Ridge de reduzir o número de preditores no modelo final. A versão penalizada da função de probabilidade de log a ser maximizada assume agora a forma:
+O Lasso é outra alternativa de regularização que supera a desvantagem da regressão de Ridge de reduzir o número de preditores no modelo final. A versão penalizada da função de EMV assume a forma:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=l^L_\lambda(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda&space;\sum^{p}_{j=1}|\beta_j|" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l^R_\lambda(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda&space;\sum^{p}_{j=1}|\beta_j|" title="l^R_\lambda(\beta) = \sum^{n}_{i=1}\left [ y_ix_i\beta-log(1+e^{x_i\beta})) \right ] - \lambda \sum^{p}_{j=1}|\beta_j|" /></a>
 
