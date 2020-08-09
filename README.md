@@ -59,7 +59,7 @@ Comparando com a regressão de Ridge, a Lasso usa uma penalidade de L1 em vez de
 
 # Elastic Net
 
-Outro método de regularização e seleção variável chamado Elastic Net, inclui um parâmetro de ajuste α ≥ 0, sendo a penalidade uma mistura das duas abordagens anteriore
+Outro método de regularização e seleção variáveis é chamado de Elastic Net, inclui um parâmetro de ajuste <img src="https://latex.codecogs.com/gif.latex?\alpha\geq" title="\alpha\geq" /> 0, sendo a penalidade uma mistura das duas abordagens anteriormente expostas:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha\sum_{j=1}^{p}\beta^2_j&plus;(1-\alpha))\sum_{j=1}^{p}|\beta_j|" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha\sum_{j=1}^{p}\beta^2_j&plus;(1-\alpha))\sum_{j=1}^{p}|\beta_j|" title="\alpha\sum_{j=1}^{p}\beta^2_j+(1-\alpha))\sum_{j=1}^{p}|\beta_j|" /></a>
 
