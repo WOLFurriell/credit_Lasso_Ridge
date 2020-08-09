@@ -37,17 +37,17 @@ Outro ponto de atenção refere-se a seleção das covariáveis, na grande maior
 
 # Regularização
 
-De modo geral, quando a relação entre a função de ligação e uma resposta dicotômica com os preditores é aproximadamente linear, as estimativas de probabilidade terão um viés baixo, contudo podem ter uma alta variação, quando o número de covariáveis for elevado comparado as observações ou quando existe multicolinearidade nos dados. Dessa forma, as regressões regularizadas podem ser empregadas trocando um pequeno aumento no viés por uma considerável diminuição na variação e consequentemente melhorando a precisão geral do modelo.
+De modo geral, quando a relação entre a função de ligação e uma resposta dicotômica com os preditores é aproximadamente linear, as estimativas de probabilidade terão um viés baixo, contudo, podem ter uma alta variação, quando o número de covariáveis for elevado comparado as observações ou quando existe multicolinearidade nos dados. Dessa forma, as regressões regularizadas podem ser empregadas trocando um pequeno aumento no viés por uma considerável diminuição na variação e consequentemente melhorando a precisão geral do modelo.
 
 À vista disso, vamos discutir acerca dos modelos regularizados de Ridge, Lasso e Elastic Net. A solução destes algoritmos é adicionar hiperparâmetros regularizadores penalizando os parâmetros da regressão, auxiliando assim na diminuição da variância e do erro do modelo, garantindo a generalização efetiva dos resultados e com isso, regulando a entrada das covariáveis, através de pesos e penalização da função objetivo.
 
 # Ridge
 
-O estimador de Ridge depende da escolha do hiperparâmetro de tuning <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> > 0 que é acrescido ao estimador de MV, assim temos:
+O estimador de Ridge depende da escolha do hiperparâmetro de tuning <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> > 0 que é acrescido ao EMV, assim temos:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=l^R_\lambda(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda&space;\sum^{p}_{j=1}\beta^2_j" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l^R_\lambda(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda&space;\sum^{p}_{j=1}\beta^2_j" title="l^R_\lambda(\beta) = \sum^{n}_{i=1}\left [ y_ix_i\beta-log(1+e^{x_i\beta})) \right ] - \lambda \sum^{p}_{j=1}\beta^2_j" /></a>
 
-Para qualquer valor fixo de λ, a regressão de Ridge se encaixa apenas em um único modelo, que pode ser executado rapidamente. À medida que a penalidade de contração λ aumenta, as estimativas do coeficiente tendem a se aproximar de zero. No entanto, a penalidade introduzida na função de probabilidade de log reduzirá todos os coeficientes para zero, mas não definirá nenhum deles exatamente como zero. Portanto, a regressão de Ridge tem a desvantagem sobre a seleção do modelo, de incluir todos os preditores no modelo final. Dessa forma, a interpretação do modelo quando o número de variáveis é grande acaba sendo mais problemática. 
+À medida que a penalidade de <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> aumenta, as estimativas tendem a se aproximar de zero. Portanto, a regressão de Ridge tem a desvantagem sobre a seleção das covariáveis, uma vez que, inclui todas no modelo final. Dessa forma, a interpretação do modelo quando o número de variáveis é grande torna-se problemática. 
 
 # Lasso
 
