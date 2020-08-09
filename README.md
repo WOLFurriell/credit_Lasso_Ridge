@@ -24,7 +24,16 @@ em que <img src="https://latex.codecogs.com/gif.latex?\pi_i" title="\pi_i" /> de
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=l(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[y_i&space;log(\pi_i)&plus;(1-y_i)log(1-\pi_i))\right&space;]=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[y_i&space;log(\pi_i)&plus;(1-y_i)log(1-\pi_i))\right&space;]=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]" title="l(\beta) = \sum^{n}_{i=1}\left [y_i log(\pi_i)+(1-y_i)log(1-\pi_i))\right ]= \sum^{n}_{i=1}\left [ y_ix_i\beta-log(1+e^{x_i\beta})) \right ]" /></a>
 
+As variâncias e covariâncias de <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\beta}" title="\boldsymbol{\beta}" /> são dadas pela Matriz de informação Fisher
+
 <img src="https://latex.codecogs.com/gif.latex?-\frac{\partial^2\ell}{\partial\,\beta_j^2}&space;=&space;\sum_{i=1}^{n}\,x_{ij}^2\,\pi(x_i)\,(1&space;-&space;\pi(x_i))&space;\\&space;e&space;\\&space;-\frac{\partial^2\ell}{\partial\,\beta_j\,\beta_l}&space;=&space;\sum_{i=1}^{n}\,x_{ij}\,x_{il}\,\pi(x_i)\,(1&space;-&space;\pi(x_i))" title="-\frac{\partial^2\ell}{\partial\,\beta_j^2} = \sum_{i=1}^{n}\,x_{ij}^2\,\pi(x_i)\,(1 - \pi(x_i)) \\ e \\ -\frac{\partial^2\ell}{\partial\,\beta_j\,\beta_l} = \sum_{i=1}^{n}\,x_{ij}\,x_{il}\,\pi(x_i)\,(1 - \pi(x_i))" />
+
+Sendo a inferência sobre os <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\beta}" title="\boldsymbol{\beta}" />'s dada pelo teste de Wald
+<img src="https://latex.codecogs.com/gif.latex?\mathcal{H}_0:&space;\boldsymbol{\beta}&space;=&space;0" title="\mathcal{H}_0: \boldsymbol{\beta} = 0" />
+
+Na qual testamos a significância do parâmetro estimado
+
+<img src="https://latex.codecogs.com/gif.latex?S_{W}&space;=&space;\left(\hat{\boldsymbol{\beta}}\right)^\top\,\left[I\left(\hat{\boldsymbol{\beta}}\right)\right]^{-1}&space;\,\left(\widehat{\boldsymbol{\beta}}\right)&space;\sim&space;\chi^2_{p&space;-&space;q}" title="S_{W} = \left(\hat{\boldsymbol{\beta}}\right)^\top\,\left[I\left(\hat{\boldsymbol{\beta}}\right)\right]^{-1} \,\left(\widehat{\boldsymbol{\beta}}\right) \sim \chi^2_{p - q}" />
 
 
 Apesar de ser um algoritmo amplamente utilizado, os modelos de regressão logística tem algumas limitações, principalmente quando precisamos considerar um volume bastante grande de covariáveis para sua construção. Tal questão levanta problemas como o de multicolinearidades, isto é, variáveis preditoras com alto nível de correlação no modelo resultando em inferências errôneas ou pouco confiáveis.
