@@ -28,10 +28,7 @@ As variâncias e covariâncias de <img src="https://latex.codecogs.com/gif.latex
 
 <img src="https://latex.codecogs.com/gif.latex?-\frac{\partial^2\ell}{\partial\,\beta_j^2}&space;=&space;\sum_{i=1}^{n}\,x_{ij}^2\,\pi(x_i)\,(1&space;-&space;\pi(x_i))&space;\\&space;e&space;\\&space;-\frac{\partial^2\ell}{\partial\,\beta_j\,\beta_l}&space;=&space;\sum_{i=1}^{n}\,x_{ij}\,x_{il}\,\pi(x_i)\,(1&space;-&space;\pi(x_i))" title="-\frac{\partial^2\ell}{\partial\,\beta_j^2} = \sum_{i=1}^{n}\,x_{ij}^2\,\pi(x_i)\,(1 - \pi(x_i)) \\ e \\ -\frac{\partial^2\ell}{\partial\,\beta_j\,\beta_l} = \sum_{i=1}^{n}\,x_{ij}\,x_{il}\,\pi(x_i)\,(1 - \pi(x_i))" />
 
-Sendo a inferência sobre os <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\beta}" title="\boldsymbol{\beta}" />'s dada pelo teste de Wald
-<img src="https://latex.codecogs.com/gif.latex?\mathcal{H}_0:&space;\boldsymbol{\beta}&space;=&space;0" title="\mathcal{H}_0: \boldsymbol{\beta} = 0" />
-
-Na qual testamos a significância do parâmetro estimado
+Sendo a inferência sobre os <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\beta}" title="\boldsymbol{\beta}" />'s dada pelo teste de Wald, no qual testamos a significância dos parâmetros estimados,<img src="https://latex.codecogs.com/gif.latex?\mathcal{H}_0:&space;\boldsymbol{\beta}&space;=&space;0" title="\mathcal{H}_0: \boldsymbol{\beta} = 0" />:
 
 <img src="https://latex.codecogs.com/gif.latex?S_{W}&space;=&space;\left(\hat{\boldsymbol{\beta}}\right)^\top\,\left[I\left(\hat{\boldsymbol{\beta}}\right)\right]^{-1}&space;\,\left(\widehat{\boldsymbol{\beta}}\right)&space;\sim&space;\chi^2_{p&space;-&space;q}" title="S_{W} = \left(\hat{\boldsymbol{\beta}}\right)^\top\,\left[I\left(\hat{\boldsymbol{\beta}}\right)\right]^{-1} \,\left(\widehat{\boldsymbol{\beta}}\right) \sim \chi^2_{p - q}" />
 
