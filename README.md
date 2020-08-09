@@ -6,11 +6,11 @@ Assim, um recurso bastante utilizado são os modelos de crédito quantitativos e
 
 # Regressão Logística comum
 
-Vamos relembrar alguns aspectos importantes do modelo de Regressão Logística, seja a variável resposta Y binária temos:
+Vamos relembrar alguns aspectos importantes do modelo de Regressão Logística, seja a variável resposta Y binária, temos:
 
-- <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 1 a ocorrência do evento de interesse (Evento);
+- <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 1 a ocorrência do evento de interesse;
 
-- <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 0 ausência do evento de interesse (Referência).
+- <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 0 ausência do evento de interesse ou referência.
 
 - <img src="https://latex.codecogs.com/gif.latex?X=(x_1,\ldots,&space;x_p)^\top" title="X=(x_1,\ldots, x_p)^\top" /> é um vetor de variáveis exploratórias, que podem ser discretas, continuas ou categóricas. De tal forma que as variáveis categóricas quando não ordinais podem ser incorporadas ao modelo por meio de matrizes dummy.
 
