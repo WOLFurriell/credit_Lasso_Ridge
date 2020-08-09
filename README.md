@@ -4,7 +4,7 @@ O crédito impulsiona a capacidade de consumo e o poder de compra dos indivíduo
 A quebra do ciclo ocorre quando o indíviduo se torna inadimplente, isto é, não realizada o pagamento previsto de seus empréstimos, no período estipulado. Para mensurar o risco de inadimplência  as intituições financeiras se amparam em ferramentas de Credit e Behavior scoring, utilizadas para mensurar o risco de um indivíduo tornar-se inadimplente dada suas características econômicas e comportamentais no mercado, uma vez que, o grande volume de solicitações impede aprovações exclusivamente qualitativas.
 Assim, um recurso bastante utilizado são os modelos de crédito quantitativos empregados comumente para metigar e predizer o risco de inadimplência, tais modelos em sua maioria são desenvolvidos com a metodologias estatística de regressão linear e principalmente logística, apesar do advento dos algortimos de Machine Learning, os modelos de principalmente de Regressào Logística ainda mostram-se ferramente de bastante interesse pela sua facilidade de interpretação e implementação.
 
-# Regressão Logística comum
+# Regressão Logística
 
 Vamos relembrar alguns aspectos importantes do modelo de Regressão Logística, seja a variável resposta Y binária, temos:
 
@@ -32,11 +32,8 @@ Sendo a inferência sobre os <img src="https://latex.codecogs.com/gif.latex?\bol
 
 <img src="https://latex.codecogs.com/gif.latex?S_{W}&space;=&space;\left(\hat{\boldsymbol{\beta}}\right)^\top\,\left[I\left(\hat{\boldsymbol{\beta}}\right)\right]^{-1}&space;\,\left(\widehat{\boldsymbol{\beta}}\right)&space;\sim&space;\chi^2_{p&space;-&space;q}" title="S_{W} = \left(\hat{\boldsymbol{\beta}}\right)^\top\,\left[I\left(\hat{\boldsymbol{\beta}}\right)\right]^{-1} \,\left(\widehat{\boldsymbol{\beta}}\right) \sim \chi^2_{p - q}" />
 
-
-Apesar de ser um algoritmo amplamente utilizado, os modelos de regressão logística tem algumas limitações, principalmente quando precisamos considerar um volume bastante grande de covariáveis para sua construção. Tal questão levanta problemas como o de multicolinearidades, isto é, variáveis preditoras com alto nível de correlação no modelo resultando em inferências errôneas ou pouco confiáveis.
-Outro ponto de atenção refere-se a seleção das variáveis preditoras, na grande maioria dos casos a seleção é dada pelas técnicas de Stepwise, Forward, Backward ou mesmo o Teste da Razão de Verossimilhança algoritmos baseados em testes de distribuições de probabilidade, que para amostras muito grandes tendem a ser significativos em algum grau. 
-
-A tarefa de determinar quais preditores estão associados a variável target não é simples, ao selecionar as variáveis para um modelo, geralmente se observa p-value individual, contudo se as covariáveis estiverem altamente correlacionadas, os p-values tendem a ser significativos, levando a resultados equivovados e por consequência incluindo informações irrelevantes no processo, adicionando complexidade e interpretabilidade desnecessárias. Além disso, se o número de observações não for muito maior que o de covariáveis, ou mesmo, modelos hiperparametrizados podem ocorrer problemas de alta variabilidade, resultando em overfitting. 
+Apesar de ser um algoritmo amplamente utilizado e bastante robusto, os modelos de regressão logística tem algumas limitações, principalmente quando precisamos considerar um volume grande de covariáveis para sua construção. Tal questão levanta problemas como o de multicolinearidades, isto é, variáveis preditoras com alto nível de correlação no modelo, resultando em inferências errôneas ou pouco confiáveis.
+Outro ponto de atenção refere-se a seleção das covariáveis, na grande maioria dos casos a seleção é dada pelas técnicas de Stepwise, Forward, Backward ou mesmo pelo Teste da Razão de Verossimilhança, todas baseadas em testes de distribuições de probabilidade, que para amostras muito grandes ou problemas de multicolinearidade tendem a ser significativos em algum grau. Tais pontos podem levar a resultados equivovados e por consequência incluir informações irrelevantes no processo, adicionando complexidade e interpretabilidade desnecessárias ao modelo, resultando em modelos hiperparametrizados com problemas de alta variabilidade e overfitting. 
 
 # Regularização
 
