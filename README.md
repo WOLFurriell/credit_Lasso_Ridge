@@ -1,4 +1,4 @@
-# Aplicação das regressões de Ridge, Lasso e Elastic net a modelos de crédito
+# Aplicação das regressões de Ridge, Lasso e Elastic net aos modelos de crédito
 
 Um recurso bastante utilizado na análise de crédito, seja para concessão ou mesmo manutenção, são os modelos quantitativos, empregados comumente para metigar e predizer o risco de inadimplência dos clientes, dado pelo atraso do mesmo em algum período estabilecido. Tais modelos em sua maioria são desenvolvidos com as metodologias estatísticas de regressão, principalmente a Logística e apesar do advento dos algortimos de Machine Learning, os modelos Logísticos ainda ocupam lugar de de bastante interesse pela sua facilidade de interpretação e implementação.
 
