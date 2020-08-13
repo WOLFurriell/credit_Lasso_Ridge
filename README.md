@@ -64,3 +64,8 @@ Outro método de regularização e seleção de covariáveis é chamado de Elast
 Esse modelo é bastante útil quando o número de preditores(p) é muito maior que o número de observações(n), isto é, p > n. 
 
 Para os três algoritmos expostos escolher um bom valor de <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> é uma etapa de extrema importância, por isso a realização de tuning deste hiperparâmetro, juntamento com a avaliação do ajuste dos modelos é essencial.
+
+
+## Aplicação
+
+<img align="center" width="800" height="350"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/corr.png">
