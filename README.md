@@ -59,7 +59,7 @@ Comparando com a regressão de Ridge, a Lasso usa uma penalidade de L1 em vez de
 
 Outro método de regularização e seleção de covariáveis é chamado de Elastic Net, que inclui um parâmetro de ajuste <img src="https://latex.codecogs.com/gif.latex?\alpha\geq" title="\alpha\geq" /> 0, sendo a penalidade uma mistura das duas abordagens anteriormente expostas:
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\alpha\sum_{j=1}^{p}\beta^2_j&plus;(1-\alpha))\sum_{j=1}^{p}|\beta_j|" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha\sum_{j=1}^{p}\beta^2_j&plus;(1-\alpha))\sum_{j=1}^{p}|\beta_j|" title="\alpha\sum_{j=1}^{p}\beta^2_j+(1-\alpha))\sum_{j=1}^{p}|\beta_j|" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=l^E_\alpha(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda\left&space;[\alpha\sum_{j=1}^{p}\beta^2_j&plus;(1-\alpha))\sum_{j=1}^{p}|\beta_j|&space;\right&space;]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l^E_\alpha(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda\left&space;[\alpha\sum_{j=1}^{p}\beta^2_j&plus;(1-\alpha))\sum_{j=1}^{p}|\beta_j|&space;\right&space;]" title="l^E_\alpha(\beta) = \sum^{n}_{i=1}\left [ y_ix_i\beta-log(1+e^{x_i\beta})) \right ] - \lambda\left [\alpha\sum_{j=1}^{p}\beta^2_j+(1-\alpha))\sum_{j=1}^{p}|\beta_j| \right ]" /></a>
 
 Esse modelo é bastante útil quando o número de preditores(p) é muito maior que o número de observações(n), isto é, p > n. 
 
