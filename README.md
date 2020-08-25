@@ -68,7 +68,7 @@ Para os três algoritmos expostos escolher um bom valor de <img src="https://lat
 
 ## Aplicação
 
-<img align="center" width="900" height="600"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/correl.png">
+<img align="center" width="1000" height="500"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/correl.png">
 
 <img align="center" width="950" height="400"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/roc0.png">
 
