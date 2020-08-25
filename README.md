@@ -65,8 +65,11 @@ Esse modelo é bastante útil quando o número de preditores(p) é muito maior q
 
 Para os três algoritmos expostos escolher um bom valor de <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> é uma etapa de extrema importância, por isso a realização de tuning deste hiperparâmetro, juntamento com a avaliação do ajuste dos modelos é essencial.
 
+## Aplicação 
 
-## Aplicação
+Para testar os algoritmos foi utilizada uma base simulada  .....
+
+O gráfico da correlação
 
 <img align="center" width="1000" height="500"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/correl.png">
 
