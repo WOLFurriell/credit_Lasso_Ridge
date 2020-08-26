@@ -72,7 +72,7 @@ A base conta com 281 variáveis, um volume relativamente expressivo, contudo, o 
 
 No gráfico abaixo temos o tuning do parâmetro <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> para os modeloa de Ridge, Lasso e Elastic-Net, visando a maximização da medida de AUC.
 
-<img align="center" width="950" height="300"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/ridge_lasso_elastic.png">
+<img align="center" width="950" height="300"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/ggauc.png">
 
 No que tange ao diagnóstico do modelos, avaliamos que os modelos de X e Y, performaram melhor que o modelo Z, entretanto, tal diferença.
 
