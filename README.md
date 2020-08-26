@@ -79,5 +79,5 @@ No que tange ao diagnóstico dos modelos, verificamos a curva ROC, be, como a me
 
 modelos de X e Y, performaram melhor que o modelo Z, entretanto, tal diferença.
 
-<img align="center" width="1000" height="400"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/roc0.png">
+<img align="center" width="1000" height="450"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/roc0.png">
 
