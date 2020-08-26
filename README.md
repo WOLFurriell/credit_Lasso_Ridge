@@ -68,13 +68,16 @@ Para os três algoritmos expostos escolher um bom valor de <img src="https://lat
 ## Aplicação 
 
 Para testar os algoritmos foi utilizada a base BlogFeedback Data Set, disponível em:  https://archive.ics.uci.edu/ml/datasets/BlogFeedback#
-A base conta com 281 variáveis, um volume relativamente expressivo, contudo, o número de observações ainda supera tal valor. 
+A base conta com 281 variáveis, um volume relativamente expressivo. No estudo, comparamos os modelos de Ridge, Lasso, Elastic-Net e Logit sem penalização, no caso dos modelos penalizados, foi realizado o Tuning do parâmetro <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> e <img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /> para o Elastic-Net.
 
 No gráfico abaixo temos o tuning do parâmetro <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> para os modeloa de Ridge, Lasso e Elastic-Net, visando a maximização da medida de AUC.
 
 <img align="center" width="950" height="300"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/ggauc.png">
 
-No que tange ao diagnóstico do modelos, avaliamos que os modelos de X e Y, performaram melhor que o modelo Z, entretanto, tal diferença.
+No que tange ao diagnóstico dos modelos, verificamos a curva ROC, be, como a medida de AUC, desse modo, avaliamos que os resultados dos modelos foram bastante similares 
 
-<img align="center" width="950" height="400"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/roc0.png">
+
+modelos de X e Y, performaram melhor que o modelo Z, entretanto, tal diferença.
+
+<img align="center" width="1000" height="500"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/roc0.png">
 
