@@ -68,7 +68,7 @@ Para os três algoritmos expostos escolher um bom valor de <img src="https://lat
 ## Aplicação 
 
 Para testar os algoritmos foi utilizada a base BlogFeedback Data Set, disponível em:  https://archive.ics.uci.edu/ml/datasets/BlogFeedback#
-A base conta com 281 variáveis, um volume relativamente expressivo. No estudo, comparamos os modelos de Ridge, Lasso, Elastic-Net e Logit sem penalização, no caso dos modelos penalizados, foi realizado o Tuning do parâmetro <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> e <img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /> para o Elastic-Net.
+A base conta com 281 variáveis, um volume relativamente expressivo. No estudo, comparamos os modelos de Ridge, Lasso, Elastic-Net e Logit sem penalização, no caso dos modelos penalizados, foi realizado o Tuning do parâmetro <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> e <img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /> para o Elastic-Net. Quanto ao Logit sem penalização, foi empregado o processo de Stepwise para seleção de variáveis.
 
 No gráfico abaixo temos o tuning do parâmetro <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> para os modeloa de Ridge, Lasso e Elastic-Net, visando a maximização da medida de AUC.
 
