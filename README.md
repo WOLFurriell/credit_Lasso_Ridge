@@ -74,10 +74,7 @@ No gráfico abaixo temos o tuning do parâmetro <img src="https://latex.codecogs
 
 <img align="center" width="950" height="300"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/ggauc.png">
 
-No que tange ao diagnóstico dos modelos, verificamos a curva ROC, be, como a medida de AUC, desse modo, avaliamos que os resultados dos modelos foram bastante similares 
-
-
-modelos de X e Y, performaram melhor que o modelo Z, entretanto, tal diferença.
+No que tange ao diagnóstico dos modelos, verificamos a curva ROC, bem como a medida de AUC, desse modo, avaliamos que os resultados foram bastante similares, sendo o Lasso, o que apresentou a melhor performace .
 
 <img align="center" width="1000" height="450"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/roc0.png">
 
