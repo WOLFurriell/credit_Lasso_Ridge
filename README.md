@@ -1,6 +1,6 @@
 # Regressões Logísticas de Ridge, Lasso e Elastic-Net
 
-Um recurso bastante utilizado na análise de crédito, são os modelos quantitativos, empregados comumente para mitigar e predizer o risco de inadimplência dos clientes, tais modelos em sua maioria são desenvolvidos com as metodologias de regressão, principalmente a Logística Binária. Apesar do advento dos algortimos de Machine Learning, os modelos Logísticos ainda ocupam lugar de bastante relevância no mercado e na academia, pela sua facilidade de interpretação e implementação. Tendo em vista tais aspectos, vamos expor de forma breve algumas características da Regressão Logística Binária, suas limitações e alguns modelos alternativos para contorná-las.
+Um recurso bastante utilizado na análise de crédito, são os modelos quantitativos, empregados comumente para mitigar e predizer o risco de inadimplência dos clientes, tais modelos em sua maioria são desenvolvidos com as metodologias de regressão, principalmente a Logística Binária. Apesar do advento dos algoritmos  de Machine Learning, os modelos Logísticos ainda ocupam lugar de bastante relevância no mercado e na academia, pela sua facilidade de interpretação e implementação. Tendo em vista tais aspectos, vamos expor de forma breve algumas características da Regressão Logística Binária, suas limitações e alguns modelos alternativos para contorná-las.
 
 # Regressão Logística Binária
 
@@ -33,7 +33,7 @@ Sendo a inferência sobre os <img src="https://latex.codecogs.com/gif.latex?\bol
 <img src="https://latex.codecogs.com/gif.latex?S_{W}&space;=&space;\left(\hat{\boldsymbol{\beta}}\right)^\top\,\left[I\left(\hat{\boldsymbol{\beta}}\right)\right]^{-1}&space;\,\left(\widehat{\boldsymbol{\beta}}\right)&space;\sim&space;\chi^2_{p&space;-&space;q}" title="S_{W} = \left(\hat{\boldsymbol{\beta}}\right)^\top\,\left[I\left(\hat{\boldsymbol{\beta}}\right)\right]^{-1} \,\left(\widehat{\boldsymbol{\beta}}\right) \sim \chi^2_{p - q}" />
 
 Apesar de ser um algoritmo amplamente utilizado e bastante robusto, os modelos de regressão logística tem algumas limitações, principalmente quando precisamos considerar um volume grande de covariáveis para sua construção. Tal questão levanta problemas como o de multicolinearidade, isto é, variáveis preditoras com alto nível de correlação, resultando em inferências errôneas ou pouco confiáveis.
-Outro ponto de atenção refere-se a seleção das covariáveis, na grande maioria dos casos a seleção é dada pelas técnicas de Stepwise, Forward, Backward ou mesmo pelo Teste da Razão de Verossimilhança, todas baseadas em testes de distribuição de probabilidade, que para amostras muito grandes ou com problemas de multicolinearidade tendem a retornar resultados significativos em algum grau. Tais pontos podem levar a conclusões equivovados e por consequência incluir informações irrelevantes no processo, adicionando complexidade e interpretabilidade desnecessárias, resultando em modelos hiperparametrizados com problemas de alta variabilidade e overfitting. 
+Outro ponto de atenção refere-se a seleção das covariáveis, na grande maioria dos casos a seleção é dada pelas técnicas de Stepwise, Forward, Backward ou mesmo pelo Teste da Razão de Verossimilhança, todas baseadas em testes de distribuição de probabilidade, que para amostras muito grandes ou com problemas de multicolinearidade tendem a retornar resultados significativos em algum grau. Tais pontos podem levar a conclusões equivocadas e por consequência incluir informações irrelevantes no processo, adicionando complexidade e interpretabilidade desnecessárias, resultando em modelos hiperparametrizados com problemas de alta variabilidade e overfitting. 
 
 # Regularização
 
@@ -53,7 +53,7 @@ O Lasso é outra alternativa de regularização que supera a desvantagem da regr
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=l^L_\lambda(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda&space;\sum^{p}_{j=1}|\beta_j|" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l^R_\lambda(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda&space;\sum^{p}_{j=1}|\beta_j|" title="l^R_\lambda(\beta) = \sum^{n}_{i=1}\left [ y_ix_i\beta-log(1+e^{x_i\beta})) \right ] - \lambda \sum^{p}_{j=1}|\beta_j|" /></a>
 
-Comparando com a regressão de Ridge, a Lasso usa uma penalidade de L1 em vez de L2. O que permite a seleção de variáveis, uma vez que, quando <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> é suficientemente grande, algumas das estimativas podem ser exatamente iguais a zero. Desse modo, o Lasso tem a vantagem sobre a regressão de Ridge, já que o modelo final envolve apenas um subconjunto dos preditores, que, por sua vez, melhora a interpretabilidade do modelo. Destaca-se que tanto a regressão do Lasso quanto de Ridge, geralmente não se penalizam o intercepto. 
+Comparando com a regressão de Ridge, a Lasso usa uma penalidade de L1 em vez de L2. O que permite a seleção de variáveis, uma vez que, quando <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> é suficientemente grande, algumas das estimativas podem ser exatamente iguais a zero. Desse modo, o Lasso tem a vantagem sobre a regressão de Ridge, já que o modelo final envolve apenas um subconjunto dos preditores, que, no que lhe concerne, melhora a interpretabilidade do modelo. Destaca-se que tanto a regressão do Lasso quanto de Ridge, geralmente não se penalizam o intercepto. 
 
 # Elastic Net
 
@@ -74,7 +74,7 @@ No gráfico abaixo temos o tuning do parâmetro <img src="https://latex.codecogs
 
 <img align="center" width="950" height="300"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/ggauc.png">
 
-No que tange o diagnóstico, verificamos a curva ROC, bem como, a medida de AUC, desse modo, avaliamos que os resultados foram bastante similares, sendo o Lasso, o modelo que apresentou a melhor performace. Contudo, o modelo Logit sem penalização, apesar de mais simples em termos de número de variáveis e algoritmo, mostrou uma boa capacidade de discriminação e generalização dos resultados, quando avaliamos as bases de Teste de Validação. 
+No que tange o diagnóstico, verificamos a curva ROC, bem como, a medida de AUC, desse modo, avaliamos que os resultados foram bastante similares, sendo o Lasso, o modelo que apresentou a melhor performace. Contudo, o modelo Logit sem penalização, apesar de mais simples considerando número de variáveis e algoritmo, mostrou uma boa capacidade de discriminação e generalização dos resultados, quando avaliamos as bases de Teste de Validação. 
 
 <img align="center" width="1000" height="450"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/roc0.png">
 
