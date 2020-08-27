@@ -4,6 +4,8 @@ Um recurso bastante utilizado na análise de crédito, são os modelos quantitat
 
 # Regressão Logística Binária
 
+Tomando como apoio um trabalho anteriormente realizado sobre Modelos de Regressão Logística Binária: https://github.com/WOLFurriell/RegBin/tree/master. 
+
 Seja a variável resposta Y binária, temos:
 
 - <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 1 a ocorrência do evento de interesse;
