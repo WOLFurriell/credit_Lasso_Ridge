@@ -40,7 +40,7 @@ Outro ponto de atenção refere-se a seleção das covariáveis, na grande maior
 
 # Regularização
 
-As regressões regularizadas podem ser empregadas trocando um pequeno aumento no viés por uma considerável diminuição na variação dos resultados e consequentemente melhorando a precisão geral do modelo, principalmente quando o número de covariáveis é elevado comparado as observações, ou mesmo, quando existe multicolinearidade nos dados. À vista disso, vamos discutir acerca dos modelos regularizados de Ridge, Lasso e Elastic Net. A solução destes algoritmos é adicionar hiperparâmetros regularizadores penalizando os parâmetros da regressão, auxiliando assim na diminuição da variância e do erro do modelo, garantindo a generalização efetiva dos resultados e com isso, regulando a entrada das covariáveis, através de pesos e penalização da função objetivo.
+As técnicas de regularização podem ser empregadas trocando um pequeno aumento no viés por uma considerável diminuição na variação dos resultados e consequentemente melhorando a precisão geral do modelo, principalmente quando o número de covariáveis é elevado comparado as observações, ou mesmo, quando existe multicolinearidade nos dados. À vista disso, vamos discutir acerca dos modelos regularizados de Ridge, Lasso e Elastic Net. A solução destes algoritmos é adicionar hiperparâmetros regularizadores penalizando os parâmetros da regressão, auxiliando assim na diminuição da variância e do erro do modelo, garantindo a generalização efetiva dos resultados e com isso, regulando a entrada das covariáveis, através de pesos e penalização da função objetivo.
 
 # Ridge
 
@@ -60,7 +60,7 @@ Comparando com a regressão de Ridge, a Lasso usa uma penalidade de L1 em vez de
 
 # Elastic Net
 
-Outro método de regularização e seleção de covariáveis é chamado de Elastic Net, que inclui um parâmetro de ajuste <img src="https://latex.codecogs.com/gif.latex?\alpha\geq" title="\alpha\geq" /> 0, sendo a penalidade uma mistura das duas abordagens anteriormente expostas:
+Outro método de regularização e seleção de covariáveis é chamado de Elastic Net, que inclui um parâmetro de ajuste <a href="https://www.codecogs.com/eqnedit.php?latex=0&space;\leq&space;\alpha&space;\leq&space;1" target="_blank"><img src="https://latex.codecogs.com/gif.latex?0&space;\leq&space;\alpha&space;\leq&space;1" title="0 \leq \alpha \leq 1" /></a>, sendo a penalidade uma mistura das duas abordagens anteriormente expostas:
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=l^E_\alpha(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda\left&space;[\alpha\sum_{j=1}^{p}\beta^2_j&plus;(1-\alpha))\sum_{j=1}^{p}|\beta_j|&space;\right&space;]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?l^E_\alpha(\beta)&space;=&space;\sum^{n}_{i=1}\left&space;[&space;y_ix_i\beta-log(1&plus;e^{x_i\beta}))&space;\right&space;]&space;-&space;\lambda\left&space;[\alpha\sum_{j=1}^{p}\beta^2_j&plus;(1-\alpha))\sum_{j=1}^{p}|\beta_j|&space;\right&space;]" title="l^E_\alpha(\beta) = \sum^{n}_{i=1}\left [ y_ix_i\beta-log(1+e^{x_i\beta})) \right ] - \lambda\left [\alpha\sum_{j=1}^{p}\beta^2_j+(1-\alpha))\sum_{j=1}^{p}|\beta_j| \right ]" /></a>
 
