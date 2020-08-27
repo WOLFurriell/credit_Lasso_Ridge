@@ -4,7 +4,7 @@ Um recurso bastante utilizado na análise de crédito, são os modelos quantitat
 
 # Regressão Logística Binária
 
-Alguns aspectos importantes do modelo de Regressão Logística, seja a variável resposta Y binária, temos:
+Seja a variável resposta Y binária, temos:
 
 - <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 1 a ocorrência do evento de interesse;
 
