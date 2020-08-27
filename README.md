@@ -68,11 +68,12 @@ Para os três algoritmos expostos escolher um bom valor de <img src="https://lat
 Para testar os algoritmos foi utilizada a base BlogFeedback Data Set, disponível em:  https://archive.ics.uci.edu/ml/datasets/BlogFeedback#.
 A base conta com 281 variáveis, um volume relativamente expressivo, passível de seleção. No estudo, comparamos os modelos de Ridge, Lasso, Elastic-Net e Logit sem penalização. No caso dos modelos penalizados, foi realizado o Tuning do parâmetro <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> e <img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /> para o Elastic-Net. Quanto ao Logit sem penalização, foi empregado o processo de Stepwise para seleção de variáveis.
 
-No gráfico abaixo temos o tuning do parâmetro <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> para os modeloa de Ridge, Lasso e Elastic-Net, visando a maximização da medida de AUC.
+No gráfico abaixo temos o tuning do parâmetro <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> para os modeloa de Ridge, Lasso e Elastic-Net, visando a maximização da medida de AUC. Tal processo, permite verificar o conjunto de informações que retornam a melhor discriminação para o modelo.
 
 <img align="center" width="950" height="300"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/ggauc.png">
 
-No que tange o diagnóstico dos modelos, verificamos a curva ROC, bem como, a medida de AUC, desse modo, avaliamos que os resultados foram bastante similares, sendo o Lasso, o que apresentou a melhor performace. Contudo, o modelo Logit sem penalização, apesar de mais simples em termos de número de variáveis, mostrou uma boa capacidade de discriminação e generalização dos resultados, quando avaliamos as bases de Teste de Validação. 
+No que tange o diagnóstico, verificamos a curva ROC, bem como, a medida de AUC, desse modo, avaliamos que os resultados foram bastante similares, sendo o Lasso, o modelo que apresentou a melhor performace. Contudo, o modelo Logit sem penalização, apesar de mais simples em termos de número de variáveis e algoritmo, mostrou uma boa capacidade de discriminação e generalização dos resultados, quando avaliamos as bases de Teste de Validação. 
 
 <img align="center" width="1000" height="450"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/roc0.png">
 
+É válido ressaltar que na aplicação exposta, não ocorreu o problema de p > n, isto é, o volume de variáveis superiores ao de observações. Ponto de bastante destaque para utilização dos modelos penalizados. Assim, pode-se considerá-los também como um bom indicador para seleção de variáveis.
