@@ -10,7 +10,7 @@ Seja a variável resposta Y binária, temos:
 
 - <img src="https://latex.codecogs.com/gif.latex?Y_i" title="Y_i" /> = 0 ausência do evento de interesse ou referência.
 
-- <img src="https://latex.codecogs.com/gif.latex?X=(x_1,\ldots,&space;x_p)^\top" title="X=(x_1,\ldots, x_p)^\top" /> é um vetor de variáveis exploratórias, que podem ser discretas, continuas ou categóricas. De tal forma que, as variáveis categóricas quando não ordinais podem ser incorporadas ao modelo por meio da matriz dummy.
+- <img src="https://latex.codecogs.com/gif.latex?X=(x_1,\ldots,&space;x_p)" title="X=(x_1,\ldots, x_p)" /> é um vetor de variáveis exploratórias, que podem ser discretas, continuas ou categóricas. De tal forma que, as variáveis categóricas quando não ordinais podem ser incorporadas ao modelo por meio da matriz dummy.
 
 - Sendo a função de ligação Logit, o componente sistemático do modelo é dado por:
 
