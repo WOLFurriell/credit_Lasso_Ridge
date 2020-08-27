@@ -35,9 +35,7 @@ Outro ponto de atenção refere-se a seleção das covariáveis, na grande maior
 
 # Regularização
 
-De modo geral, quando a relação entre a função de ligação e uma resposta dicotômica com os preditores é aproximadamente linear, as estimativas de probabilidade terão um viés baixo, contudo, podem ter uma alta variação, quando o número de covariáveis for elevado comparado as observações ou quando existe multicolinearidade nos dados. Dessa forma, as regressões regularizadas podem ser empregadas trocando um pequeno aumento no viés por uma considerável diminuição na variação e consequentemente melhorando a precisão geral do modelo.
-
-À vista disso, vamos discutir acerca dos modelos regularizados de Ridge, Lasso e Elastic Net. A solução destes algoritmos é adicionar hiperparâmetros regularizadores penalizando os parâmetros da regressão, auxiliando assim na diminuição da variância e do erro do modelo, garantindo a generalização efetiva dos resultados e com isso, regulando a entrada das covariáveis, através de pesos e penalização da função objetivo.
+As regressões regularizadas podem ser empregadas trocando um pequeno aumento no viés por uma considerável diminuição na variação e consequentemente melhorando a precisão geral do modelo. À vista disso, vamos discutir acerca dos modelos regularizados de Ridge, Lasso e Elastic Net. A solução destes algoritmos é adicionar hiperparâmetros regularizadores penalizando os parâmetros da regressão, auxiliando assim na diminuição da variância e do erro do modelo, garantindo a generalização efetiva dos resultados e com isso, regulando a entrada das covariáveis, através de pesos e penalização da função objetivo.
 
 # Ridge
 
