@@ -40,7 +40,7 @@ Outro ponto de atenção refere-se a seleção das covariáveis, na grande maior
 
 # Regularização
 
-As regressões regularizadas podem ser empregadas trocando um pequeno aumento no viés por uma considerável diminuição na variação e consequentemente melhorando a precisão geral do modelo, quando o número de covariáveis for elevado comparado as observações ou quando existe multicolinearidade nos dados. À vista disso, vamos discutir acerca dos modelos regularizados de Ridge, Lasso e Elastic Net. A solução destes algoritmos é adicionar hiperparâmetros regularizadores penalizando os parâmetros da regressão, auxiliando assim na diminuição da variância e do erro do modelo, garantindo a generalização efetiva dos resultados e com isso, regulando a entrada das covariáveis, através de pesos e penalização da função objetivo.
+As regressões regularizadas podem ser empregadas trocando um pequeno aumento no viés por uma considerável diminuição na variação dos resultados e consequentemente melhorando a precisão geral do modelo, principalmente quando o número de covariáveis for elevado quando comparado as observações, ou mesmo, quando existe multicolinearidade nos dados. À vista disso, vamos discutir acerca dos modelos regularizados de Ridge, Lasso e Elastic Net. A solução destes algoritmos é adicionar hiperparâmetros regularizadores penalizando os parâmetros da regressão, auxiliando assim na diminuição da variância e do erro do modelo, garantindo a generalização efetiva dos resultados e com isso, regulando a entrada das covariáveis, através de pesos e penalização da função objetivo.
 
 # Ridge
 
