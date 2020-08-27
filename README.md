@@ -1,6 +1,7 @@
 # Regressões Logísticas de Ridge, Lasso e Elastic-Net
 
-Um recurso bastante utilizado na análise de crédito, são os modelos quantitativos, empregados comumente para mitigar e predizer o risco de inadimplência dos clientes, tais modelos em sua maioria são desenvolvidos com as metodologias de regressão, principalmente a Logística Binária. Apesar do advento dos algoritmos  de Machine Learning, os modelos Logísticos ainda ocupam lugar de bastante relevância no mercado e na academia, pela sua facilidade de interpretação e implementação. Tendo em vista tais aspectos, vamos expor de forma breve algumas características da Regressão Logística Binária, suas limitações e alguns modelos alternativos para contorná-las.
+Um recurso bastante utilizado na análise de crédito, são os modelos quantitativos, empregados comumente para mitigar e predizer o risco de inadimplência dos clientes, tais modelos em sua maioria são desenvolvidos com as metodologias de regressão, principalmente a Logística Binária e visam modelar a probabilidade de um evento ocorrer, segundo um conjunto de fatores. 
+Apesar do advento dos algoritmos de Machine Learning, os modelos Logísticos ainda ocupam lugar de bastante relevância no mercado e na academia, seja pela sua facilidade de interpretação ou implementação. Visando avançar na utilização deste tipo de metodologia, vamos expor de forma breve algumas características da Regressão Logística Binária, suas limitações e alguns modelos alternativos para contorná-las.
 
 # Regressão Logística Binária
 
