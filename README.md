@@ -87,6 +87,8 @@ No que tange o diagnóstico, verificamos a curva ROC, bem como, a medida de AUC,
 
 - Pereira, Jose Manuel, Mario Basto, and Amelia Ferreira da Silva. "The logistic lasso and ridge regression in predicting corporate failure." Procedia Economics and Finance 39 (2016): 634-641.
 
+- Friedman, Jerome, Trevor Hastie, and Robert Tibshirani. The elements of statistical learning. Vol. 1. No. 10. New York: Springer series in statistics, 2001.
+
 - Penalized Logistic Regression Essentials in R: Ridge, Lasso and Elastic Net: http://www.sthda.com/english/articles/36-classification-methods-essentials/149-penalized-logistic-regression-essentials-in-r-ridge-lasso-and-elastic-net/#:~:text=Penalized%20Logistic%20Regression%20Essentials%20in%20R%3A%20Ridge%2C%20Lasso%20and%20Elastic%20Net,-kassambara%20%7C%2011%2F03&text=Penalized%20logistic%20regression%20imposes%20a,is%20also%20known%20as%20regularization.
 
 - Regularização em regressão com implementação: http://leg.ufpr.br/~walmes/ensino/ML/tutorials/03-regularization-2.html
