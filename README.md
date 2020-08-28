@@ -68,7 +68,7 @@ Para os três algoritmos expostos escolher um bom valor de <img src="https://lat
 
 # Aplicação 
 
-Para testar os algoritmos foi utilizada a base BlogFeedback Data Set, disponível no UCI Machine Learning Center:  https://archive.ics.uci.edu/ml/datasets/BlogFeedback#.
+Para testar os algoritmos foi utilizada a base BlogFeedback Data Set, disponível no UCI Machine Learning Center: https://archive.ics.uci.edu/ml/datasets/BlogFeedback#. Os resultados foram obtidos com auxílio do software R.
 A base conta com 281 variáveis, um volume relativamente alto e passível de seleção. No estudo, comparamos os modelos de Ridge, Lasso, Elastic-Net e Logit sem penalização. No caso dos modelos penalizados, foi realizado o Tuning do parâmetro <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> e de <img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /> para o Elastic-Net. Quanto ao Logit sem penalização, foi empregado o processo de Stepwise para seleção de variáveis.
 
 No gráfico abaixo temos o tuning do parâmetro <img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /> para os modeloa de Ridge, Lasso e Elastic-Net, visando a maximização da medida de AUC. Tal processo, permite verificar o conjunto de informações que retornam a melhor discriminação para o modelo.
