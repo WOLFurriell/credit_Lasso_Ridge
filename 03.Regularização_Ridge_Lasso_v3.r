@@ -13,15 +13,8 @@
 # ------------------------------------------------------------------------------
 
 rm(list=ls())
-library(glmnet)
-library(dplyr)
-library(tidyverse)
-library(caret)
-library(gridExtra)
-library(plotROC)
-library(grid)
-library(gridExtra)
-library(MASS)
+library(glmnet);library(dplyr);library(tidyverse);library(caret);library(gridExtra);
+library(plotROC);library(grid);library(gridExtra);library(MASS)
 
 set.seed(999)
 
@@ -172,7 +165,7 @@ pred_elastic_val <- predict(elastic_model, X_val, type ="response")
 
 # ----------------------------------------------------------------------------
 # ----------------------------------------------------------------------------
-# RegressÃ£o Logistica
+# RegressÃƒÂ£o Logistica
 
 logit <- glm(V281 ~ ., 
              data = train.data1,
@@ -218,14 +211,14 @@ names(df_roc_logit_val) <- c("y","pred","mod")
 df_roc_val      <- rbind(df_roc_ridge_val,df_roc_lasso_val, df_roc_elast_val,df_roc_logit_val) %>% as.data.frame() 
 df_roc_val$y    <- df_roc_val$y %>% as.character() %>% as.numeric()
 df_roc_val$pred <- df_roc_val$pred %>% as.character() %>% as.numeric()
-df_roc_val$base <- rep("Validação",length(dim(df_roc_val)[1]))
+df_roc_val$base <- rep("ValidaÃ§Ã£o",length(dim(df_roc_val)[1]))
 
 df_roc0 <- rbind(df_roc,df_roc_val) %>% as.data.frame()
 
 # ----------------------------------------------------------------------------------
 # ----------------------------------------------------------------------------------
 
-aux <- "Validação" # "Validação" "Teste"
+aux <- "ValidaÃ§Ã£o" # "ValidaÃ§Ã£o" "Teste"
 df_roc00 <- df_roc0 %>% subset(base == aux)
 
 roc <- ggplot(df_roc00, aes(d = y, m = pred, color  = mod)) + 
@@ -235,7 +228,7 @@ roc <- ggplot(df_roc00, aes(d = y, m = pred, color  = mod)) +
 dat_text <- data.frame(
   Modelo    = c("Ridge","Lasso", "Elastic","Logit"),
   AUC       = round(calc_auc(roc)$AUC, 4),
-  BASE      = c(rep("Teste",4),rep("Validação",4)),
+  BASE      = c(rep("Teste",4),rep("ValidaÃ§Ã£o",4)),
   N.Vars    = c(vars_ridge[2],vars_lasso[2],vars_elastic[2], vars_logit[2])
 )
 dat_text0 <- dat_text %>% filter(BASE == aux) 
