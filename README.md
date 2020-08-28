@@ -80,3 +80,10 @@ No que tange o diagnóstico, verificamos a curva ROC, bem como, a medida de AUC,
 <img align="center" width="1000" height="450"  src="https://github.com/WOLFurriell/credit_Lasso_Ridge/blob/master/plots/roc0.png">
 
 É válido ressaltar que na aplicação exposta, não ocorreu o problema de p > n, isto é, o volume de variáveis superiores ao de observações. Ponto de bastante destaque para utilização dos modelos penalizados. Além disso, em volumes ainda maiores de variáveis apenalização pode ser utilizada como um bom método para seleção de variáveis.
+
+# Referências 
+
+- Tibshirani, R. (1997). The LASSO method for variable selection in the Cox model. Statistics in Medicine 16 (4), 385–395
+
+- Penalized Logistic Regression Essentials in R: Ridge, Lasso and Elastic Net: http://www.sthda.com/english/articles/36-classification-methods-essentials/149-penalized-logistic-regression-essentials-in-r-ridge-lasso-and-elastic-net/#:~:text=Penalized%20Logistic%20Regression%20Essentials%20in%20R%3A%20Ridge%2C%20Lasso%20and%20Elastic%20Net,-kassambara%20%7C%2011%2F03&text=Penalized%20logistic%20regression%20imposes%20a,is%20also%20known%20as%20regularization.
+
